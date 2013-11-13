@@ -3,35 +3,83 @@ layout: default
 ---
 
 <div class="posts">
-  {% for post in paginator.posts %}
+
   <div class="post">
     <h1>
-      <a href="{{ post.url }}">
-        {{ post.title }}
+      <a href="/2013/11/15/long-time-no-see/">
+        This Week's Meeting...
       </a>
     </h1>
 
-    <span class="post-date">{{ post.date | date_to_string }}</span>
+    <span class="post-date">15 Nov 2013</span>
 
-    {{ post.content }}
+    <p>
+      <h1>NOTICES</h1>
+      <strong>
+        This will be the last week that we meet on a Friday.
+      </strong><br>
+      <strong>
+        On November 17 we will begin meeting just once a week, on Mondays, for 2 hours.
+      </strong>
+    </p>
+
+    <ol>
+      <li><a href="nov 4">Review</a> what a "process" is and how it applies to coding.</li>
+
+      <li>Club Website
+        <ul>
+          <li>Choose a name for your club’s website Something to start the conversation:<br>
+            BitsAndBytes<br>
+            KillDashNine<br>
+            SheldonHighHackers<br>
+            Pixelations
+          </li>
+          <li>Discuss site elements:<br />
+            Layout<br />
+            Palette<br />
+            Typography<br />
+            Site Tree
+          </li>
+        </ul>
+      </li>
+      <li>Due this week:<br />
+        <ul>
+          <li>Challenge #1 - finish your procedure and email it to me: wilkins.lizzie@gmail.com</li>
+          <li>Challenge #1 - start coding your image</li>
+          <li>Work on your home page</li>
+        </ul>
+      </li>
+    </ol>
+    <p>
+<strong>When you arrive...</strong><br>
+    <ol>
+      <li>Sign attendance sheet</li>
+      <li>Download <a href="https://chrome.com">Chrome</a></li>
+      <li>Download <a href="http://windows.github.com/">Github for Windows</a></li>
+      <li>Download <a href="http://www.crimsoneditor.com/">Crimson</a></li>
+      <li>Access the following accounts: Github, KhanAcademy or JSFiddle</li>
+    </ol>
+
+<strong>Links</strong><br>
+    <ul>
+      <li><a href="">Check out our work</a></li>
+      <li><a href="http://khanacademy.org">KhanAcademy</a></li>
+      <li><a href="https://drive.google.com/?urp=https://www.google.com/&authuser=0#folders/0B1f73WEjqDJmUUV1UXZDNWZjRTQ">Challenges</a></li>
+      <li><a href="http://github.com/">GitHub</a></li> 
+      <li><a href="http://jsfiddle.com/">JSFiddle</a></li> 
+    </ul>
+<strong>Notes from past meetings:</strong><br>
+    <ul>
+      <li><a href="">November 1st</a></li>
+      <li><a href="">November 4th</a></li>
+      <li><a href="">November 8th</a></li>
+    </ul>
+<strong>Assignments:</strong><br>
+    <ul>
+      <li><a href="">Challenge #1</a></li>
+      <li><a href="">Challenge #2</a></li>
+      <li><a href="">Challenge #3</a></li>
+    </ul>
+  </p>
   </div>
-  {% endfor %}
-</div>
-
-<!-- Pagination links -->
-<div class="pagination">
-  {% if paginator.next_page %}
-    <a href="/page{{paginator.next_page}}" class="older">Older</a>
-  {% else %}
-    <span class="next">Older</span>
-  {% endif %}
-  {% if paginator.previous_page %}
-    {% if paginator.page == 2 %}
-      <a href="/" class="newer">Newer</a>
-    {% else %}
-      <a href="/page{{paginator.previous_page}}" class="newer">Newer</a>
-    {% endif %}
-  {% else %}
-    <span class="previous">Newer</span>
-  {% endif %}
 </div>
